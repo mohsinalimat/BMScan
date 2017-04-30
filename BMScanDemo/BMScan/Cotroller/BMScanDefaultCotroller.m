@@ -47,6 +47,12 @@
     NSLayoutConstraint *rightConstraint = [NSLayoutConstraint constraintWithItem:self.scanSettingView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0];
     [self.view addConstraints:@[topConstraint, leftConstraint, bottonConstraint, rightConstraint]];
     
+    self.scanSettingView.feetImageView1.image = [UIImage bm_loadImageWithName:@"bm_scan_image_qr_corner_001_@2x"];
+    self.scanSettingView.feetImageView2.image = [UIImage bm_loadImageWithName:@"bm_scan_image_qr_corner_002_@2x"];
+    self.scanSettingView.feetImageView3.image = [UIImage bm_loadImageWithName:@"bm_scan_image_qr_corner_003_@2x"];
+    self.scanSettingView.feetImageView4.image = [UIImage bm_loadImageWithName:@"bm_scan_image_qr_corner_004_@2x"];
+    self.scanSettingView.scanfLinView.image = [UIImage bm_loadImageWithName:@"bm_scan_image_qr_scan_line@2x"];
+    
     if ([self.dataSource respondsToSelector:@selector(areaYInscanController:)]) {
         self.scanSettingView.topLayoutConstraint.constant = [self.dataSource areaYInscanController:self];
     }
@@ -77,27 +83,27 @@
     if ([self.dataSource respondsToSelector:@selector(feetColorInscanController:)]) {
         UIColor *color = [self.dataSource feetColorInscanController:self];
         [self.scanSettingView.feetViewArray enumerateObjectsUsingBlock:^(UIImageView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            obj.image = [obj.image imageWithColor:color];
+            obj.image = [obj.image bm_imageWithColor:color];
         }];
     }
     
     if ([self.dataSource respondsToSelector:@selector(leftTopColorInscanController:)]) {
-        self.scanSettingView.feetImageView1.image = [self.scanSettingView.feetImageView1.image imageWithColor:[self.dataSource leftTopColorInscanController:self]];
+        self.scanSettingView.feetImageView1.image = [self.scanSettingView.feetImageView1.image bm_imageWithColor:[self.dataSource leftTopColorInscanController:self]];
     }
 
     if ([self.dataSource respondsToSelector:@selector(leftBottonColorInscanController:)]) {
-        self.scanSettingView.feetImageView3.image = [self.scanSettingView.feetImageView3.image imageWithColor:[self.dataSource leftBottonColorInscanController:self]];
+        self.scanSettingView.feetImageView3.image = [self.scanSettingView.feetImageView3.image bm_imageWithColor:[self.dataSource leftBottonColorInscanController:self]];
     }
     
     if ([self.dataSource respondsToSelector:@selector(rightTopInscanController:)]) {
-        self.scanSettingView.feetImageView2.image = [self.scanSettingView.feetImageView2.image imageWithColor:[self.dataSource rightTopInscanController:self]];
+        self.scanSettingView.feetImageView2.image = [self.scanSettingView.feetImageView2.image bm_imageWithColor:[self.dataSource rightTopInscanController:self]];
     }
     
     if ([self.dataSource respondsToSelector:@selector(rightBottonInscanController:)]) {
-        self.scanSettingView.feetImageView4.image = [self.scanSettingView.feetImageView4.image imageWithColor:[self.dataSource rightBottonInscanController:self]];
+        self.scanSettingView.feetImageView4.image = [self.scanSettingView.feetImageView4.image bm_imageWithColor:[self.dataSource rightBottonInscanController:self]];
     }
     if ([self.dataSource respondsToSelector:@selector(scanfLinInscanController:)]) {
-        self.scanSettingView.scanfLinView.image = [self.scanSettingView.scanfLinView.image imageWithColor:[self.dataSource scanfLinInscanController:self]];
+        self.scanSettingView.scanfLinView.image = [self.scanSettingView.scanfLinView.image bm_imageWithColor:[self.dataSource scanfLinInscanController:self]];
     }
 }
 

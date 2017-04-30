@@ -11,6 +11,8 @@
 @interface UIImage (BMScan)
 
 //改变图片颜色
-- (UIImage *)imageWithColor:(UIColor *)color;
+- (instancetype)bm_imageWithColor:(UIColor *)color;
+
++ (instancetype)bm_loadImageWithName:(NSString *)name;
 
 @end

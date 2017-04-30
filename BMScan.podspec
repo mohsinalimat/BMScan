@@ -8,6 +8,6 @@ s.authors      = {'asiosldh' => 'asiosldh@163.com'}
 s.platform     = :ios, '8.0'
 s.source       = {:git => 'https://github.com/asiosldh/BMScan.git', :tag => s.version}
 s.source_files = 'BMScanDemo/BMScan/**/*.{h,m}'
-s.resource     = 'BMScanDemo/BMScan/image'
+s.resource     = 'BMScanDemo/BMScan/BMScan.bundle'
 s.requires_arc = true
 end

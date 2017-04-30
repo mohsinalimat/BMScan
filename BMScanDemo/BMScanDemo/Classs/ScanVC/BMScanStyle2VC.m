@@ -17,10 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.delegate = self;
     self.dataSource = self;
-    
 }
 
 - (void)scanController:(BMScanController *)scanController captureWithValueString:(NSString *)valueString {
@@ -37,13 +35,14 @@
 }
 
 - (CGFloat)areaYInscanController:(BMScanController *)scanController {
-    return (kh - 64 - 200)/2.0;
+    return 100;
 }
 
 - (CGFloat)areaWidthInscanController:(BMScanController *)scanController {
     
     return 200;
 }
+
 - (CGFloat)areaXHeightInscanController:(BMScanController *)scanController {
     
     return 200;
@@ -61,13 +60,7 @@
 }
 
 - (UIColor *)scanfLinInscanController:(BMScanController *)scanController {
-
     return [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
-}
-
-- (void)dealloc {
-    
-    NSLog(@"dealloc BMScanStyle2VC");
 }
 
 @end
