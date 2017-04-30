@@ -9,7 +9,7 @@
 #import "BMScanController.h"
 #import <AVFoundation/AVFoundation.h>
 
-@interface BMScanController () <AVCaptureMetadataOutputObjectsDelegate>
+@interface BMScanController () <AVCaptureMetadataOutputObjectsDelegate, BMScanDelegate>
 
 @property (strong, nonatomic) AVCaptureSession           *session;
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer *previewLayer;
@@ -23,6 +23,14 @@
 
 #pragma mark - init
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.delegate = self;
+    }
+    return self;
+}
+
 #pragma mark - 生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,9 +43,7 @@
         NSLog(@"没有相机 或者 没有相机权限");
         return ;
     }
-    [self creatScanning];
-    
-    
+    [self creatScanning];    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -105,6 +111,9 @@
 }
 
 #pragma mark - 自定义delegate
+
+- (void)scanController:(BMScanController *)scanController captureWithValueString:(NSString *)valueString {
+}
 
 #pragma mark - 公有方法
 

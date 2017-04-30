@@ -7,8 +7,10 @@
 //
 
 #import "BMScanStyle1VC.h"
+#import "BMScanDelegate.h"
+#import "BMScanDefaultDataSource.h"
 
-@interface BMScanStyle1VC ()
+@interface BMScanStyle1VC () <BMScanDelegate>
 
 @end
 
@@ -16,6 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.delegate = self;
+}
+
+- (void)scanController:(BMScanController *)scanController captureWithValueString:(NSString *)valueString {
+
+    [self closureScanning];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [scanController startScanning];
+    });
+}
+
+- (void)dealloc {
+    
+    NSLog(@"dealloc BMScanStyle1VC");
 }
 
 @end

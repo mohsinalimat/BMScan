@@ -7,8 +7,8 @@
 //
 
 #import "BMStyleSelectVC.h"
+#import "BMScanStyle2VC.h"
 #import "BMScanStyle1VC.h"
-#import "BMScanDefaultCotroller.h"
 
 @interface BMStyleSelectVC ()
 
@@ -17,6 +17,6 @@
 @implementation BMStyleSelectVC
 
 - (IBAction)style1ButtonClick {
-    [self.navigationController pushViewController:[BMScanDefaultCotroller new] animated:YES];
+    [self.navigationController pushViewController:[BMScanStyle1VC new] animated:YES];
 }
 @end
