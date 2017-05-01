@@ -8,9 +8,9 @@
 [![Weibo](https://img.shields.io/badge/Sina微博-@梁大红-yellow.svg?style=flat)](http://weibo.com/liangdahong) 
 [![GitHub stars](https://img.shields.io/github/stars/asiosldh/BMScan.svg)](https://github.com/asiosldh/BMScan/stargazers)
 ## 效果图 
-<img src="image/1.jpg" width="40%">
-<img src="image/2.jpg" width="40%">
-<img src="image/3.jpg" width="40%">
+<img src="image/1.jpeg" width="40%">
+<img src="image/2.jpeg" width="40%">
+<img src="image/3.jpeg" width="40%">
 
 ## CocoaPods
 CocoaPods is the recommended way to add BMScan to your project.
