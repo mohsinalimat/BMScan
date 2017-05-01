@@ -47,8 +47,8 @@
 
 /* Begin PBXFileReference section */
 		3108EEF01EB4E75700A3EABF /* BMScanDefaultDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMScanDefaultDataSource.h; sourceTree = "<group>"; };
-		31A483371EB5090A005042A9 /* BMScanStyle2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMScanStyle2VC.h; sourceTree = "<group>"; };
-		31A483381EB5090A005042A9 /* BMScanStyle2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMScanStyle2VC.m; sourceTree = "<group>"; };
+		31A483371EB5090A005042A9 /* BMScanStyle2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BMScanStyle2VC.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		31A483381EB5090A005042A9 /* BMScanStyle2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BMScanStyle2VC.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		31A483391EB5090A005042A9 /* BMScanStyle2VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMScanStyle2VC.xib; sourceTree = "<group>"; };
 		31C667B51EB579F400AB50D5 /* UIImage+BMScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BMScan.h"; sourceTree = "<group>"; };
 		31C667B61EB579F400AB50D5 /* UIImage+BMScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BMScan.m"; sourceTree = "<group>"; };
@@ -59,29 +59,29 @@
 		32CC41E41EB336F20000E9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32CC41E61EB336F20000E9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32CC41EB1EB336F20000E9CC /* BMScanDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMScanDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		32CC41EF1EB336F20000E9CC /* BMScanDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMScanDemoTests.m; sourceTree = "<group>"; };
+		32CC41EF1EB336F20000E9CC /* BMScanDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BMScanDemoTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		32CC41F11EB336F20000E9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32CC41F61EB336F20000E9CC /* BMScanDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMScanDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		32CC41FA1EB336F20000E9CC /* BMScanDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMScanDemoUITests.m; sourceTree = "<group>"; };
+		32CC41FA1EB336F20000E9CC /* BMScanDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BMScanDemoUITests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		32CC41FC1EB336F20000E9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32CC42091EB338260000E9CC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		32CC420A1EB338260000E9CC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32CC42091EB338260000E9CC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		32CC420A1EB338260000E9CC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		32CC420B1EB338260000E9CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CC421F1EB339BB0000E9CC /* BMStyleSelectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMStyleSelectVC.h; sourceTree = "<group>"; };
 		32CC42201EB339BB0000E9CC /* BMStyleSelectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMStyleSelectVC.m; sourceTree = "<group>"; };
 		32CC42211EB339BB0000E9CC /* BMStyleSelectVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMStyleSelectVC.xib; sourceTree = "<group>"; };
-		32CC42241EB33A750000E9CC /* BMScanStyle1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMScanStyle1VC.h; sourceTree = "<group>"; };
-		32CC42251EB33A750000E9CC /* BMScanStyle1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMScanStyle1VC.m; sourceTree = "<group>"; };
+		32CC42241EB33A750000E9CC /* BMScanStyle1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BMScanStyle1VC.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		32CC42251EB33A750000E9CC /* BMScanStyle1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BMScanStyle1VC.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		32CC42261EB33A750000E9CC /* BMScanStyle1VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMScanStyle1VC.xib; sourceTree = "<group>"; };
-		32CC423C1EB33E420000E9CC /* BMScanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMScanController.h; sourceTree = "<group>"; };
-		32CC423D1EB33E420000E9CC /* BMScanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMScanController.m; sourceTree = "<group>"; };
-		32CC423E1EB33E420000E9CC /* BMScanDefaultCotroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMScanDefaultCotroller.h; sourceTree = "<group>"; };
-		32CC423F1EB33E420000E9CC /* BMScanDefaultCotroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMScanDefaultCotroller.m; sourceTree = "<group>"; };
-		32CC42411EB33E420000E9CC /* BMDefaultUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDefaultUIView.h; sourceTree = "<group>"; };
-		32CC42421EB33E420000E9CC /* BMDefaultUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDefaultUIView.m; sourceTree = "<group>"; };
+		32CC423C1EB33E420000E9CC /* BMScanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BMScanController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		32CC423D1EB33E420000E9CC /* BMScanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BMScanController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		32CC423E1EB33E420000E9CC /* BMScanDefaultCotroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BMScanDefaultCotroller.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		32CC423F1EB33E420000E9CC /* BMScanDefaultCotroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BMScanDefaultCotroller.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		32CC42411EB33E420000E9CC /* BMDefaultUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BMDefaultUIView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		32CC42421EB33E420000E9CC /* BMDefaultUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BMDefaultUIView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		32CC42431EB33E420000E9CC /* BMDefaultUIView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDefaultUIView.xib; sourceTree = "<group>"; };
-		32CC424B1EB33F7C0000E9CC /* BMScanDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMScanDelegate.h; sourceTree = "<group>"; };
-		32CC424C1EB33F870000E9CC /* BMScanDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMScanDataSource.h; sourceTree = "<group>"; };
+		32CC424B1EB33F7C0000E9CC /* BMScanDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BMScanDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		32CC424C1EB33F870000E9CC /* BMScanDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BMScanDataSource.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

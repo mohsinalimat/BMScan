@@ -3,7 +3,8 @@
 //  BMScanDemo
 //
 //  Created by ___liangdahong on 2017/4/28.
-//  Copyright © 2017年 月亮小屋（中国）有限公司. All rights reserved.
+//  Copyright © http://idhong.com All rights reserved.
+//  Copyright © https://github.com/asiosldh/BMScan All rights reserved.
 //
 
 #import "BMScanController.h"
