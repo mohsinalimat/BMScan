@@ -13,7 +13,10 @@
 @protocol BMScanDataSource;
 
 typedef NS_ENUM(NSUInteger, BMScanLinViewAnimation) {
-    BMScanLinViewAnimationType1,
+    BMScanLinViewAnimationTypeCAFillModeForwards,
+    BMScanLinViewAnimationTypeCAFillModeBackwards,
+    BMScanLinViewAnimationTypeCAFillModeBoth,
+    BMScanLinViewAnimationTypeCAFillModeRemoved,
 };
 
 /**

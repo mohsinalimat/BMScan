@@ -12,9 +12,7 @@
 
 @implementation UIImage (BMScan)
 
-//改变图片颜色
 - (UIImage *)bm_imageWithColor:(UIColor *)color {
-    
     UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextTranslateCTM(context, 0, self.size.height);

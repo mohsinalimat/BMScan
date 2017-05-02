@@ -10,6 +10,7 @@
 #import "BMStyleSelectVC.h"
 #import "BMScanStyle1VC.h"
 #import "BMScanStyle2VC.h"
+#import "BMScanDefaultCotroller.h"
 
 @interface BMStyleSelectVC ()
 
@@ -29,4 +30,17 @@
     }]];
     [self presentViewController:alertController animated:YES completion:nil];
 }
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+
+    BMScanDefaultCotroller *vc = [BMScanDefaultCotroller new];
+    vc.captureSuccessBlock = ^(__kindof BMScanDefaultCotroller *scanVC, NSString *valueString) {
+        NSLog(@"%@", valueString);
+        [scanVC.navigationController popViewControllerAnimated:YES];
+    };
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 @end

@@ -10,6 +10,35 @@
 #import "BMScanController.h"
 #import <AVFoundation/AVFoundation.h>
 
+CGRect screenBounds() {
+    UIScreen *screen = [UIScreen mainScreen];
+    if (![screen respondsToSelector:@selector(fixedCoordinateSpace)]
+        && UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)) {
+        return CGRectMake(0, 0, CGRectGetHeight(screen.bounds), CGRectGetWidth(screen.bounds));
+    }
+    return screen.bounds;
+}
+
+AVCaptureVideoOrientation videoOrientationFromCurrentDeviceOrientation() {
+    switch ([[UIApplication sharedApplication] statusBarOrientation]) {
+        case UIInterfaceOrientationPortrait:
+            return AVCaptureVideoOrientationPortrait;
+            break;
+        case UIInterfaceOrientationLandscapeLeft:
+            return AVCaptureVideoOrientationLandscapeLeft;
+            break;
+        case UIInterfaceOrientationLandscapeRight:
+            return AVCaptureVideoOrientationLandscapeRight;
+            break;
+        case UIInterfaceOrientationPortraitUpsideDown:
+            return AVCaptureVideoOrientationPortraitUpsideDown;
+            break;
+        default:
+            return AVCaptureVideoOrientationPortrait;
+            break;
+    }
+}
+
 @interface BMScanController () <AVCaptureMetadataOutputObjectsDelegate, BMScanDelegate>
 
 @property (strong, nonatomic) AVCaptureSession           *session;
@@ -90,8 +119,8 @@
         _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:_session];
         _previewLayer.videoGravity = AVLayerVideoGravityResize;
         // 必须添加
-        _previewLayer.frame = [self screenBounds];
-        _previewLayer.connection.videoOrientation = [self videoOrientationFromCurrentDeviceOrientation];
+        _previewLayer.frame = screenBounds();
+        _previewLayer.connection.videoOrientation = videoOrientationFromCurrentDeviceOrientation();
     }
     return _previewLayer;
 }
@@ -132,7 +161,7 @@
 
 // 创建扫描
 - (void)creatScanning {
-    
+
     // 获取摄像设备
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     
@@ -162,36 +191,6 @@
                                         AVMetadataObjectTypeAztecCode];
     
     [self.view.layer insertSublayer:self.previewLayer atIndex:0];
-}
-
-- (CGRect)screenBounds {
-    UIScreen *screen = [UIScreen mainScreen];
-    if (![screen respondsToSelector:@selector(fixedCoordinateSpace)]
-        && UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)) {
-        return CGRectMake(0, 0, CGRectGetHeight(screen.bounds), CGRectGetWidth(screen.bounds));
-    }
-    return screen.bounds;
-}
-
-- (AVCaptureVideoOrientation)videoOrientationFromCurrentDeviceOrientation {
-    
-    switch ([[UIApplication sharedApplication] statusBarOrientation]) {
-        case UIInterfaceOrientationPortrait:
-            return AVCaptureVideoOrientationPortrait;
-            break;
-        case UIInterfaceOrientationLandscapeLeft:
-            return AVCaptureVideoOrientationLandscapeLeft;
-            break;
-        case UIInterfaceOrientationLandscapeRight:
-            return AVCaptureVideoOrientationLandscapeRight;
-            break;
-        case UIInterfaceOrientationPortraitUpsideDown:
-            return AVCaptureVideoOrientationPortraitUpsideDown;
-            break;
-        default:
-            return AVCaptureVideoOrientationPortrait;
-            break;
-    }
 }
 
 #pragma mark - 事件响应

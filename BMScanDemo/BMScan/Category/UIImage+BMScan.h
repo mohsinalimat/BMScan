@@ -14,6 +14,12 @@
 //改变图片颜色
 - (instancetype)bm_imageWithColor:(UIColor *)color;
 
+/**
+ 加载 BMScan.bundle 中的图片
+
+ @param name 图片名称
+ @return UIImage
+ */
 + (instancetype)bm_loadImageWithName:(NSString *)name;
 
 @end
