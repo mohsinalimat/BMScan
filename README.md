@@ -27,7 +27,9 @@ pod install
 ```
 
 ## 使用说明
-###只需要扫描功能
+
+### 只需要扫描功能
+
 - 创建扫描控制器继承于 `BMScanController `
 - 配置 `BMScanDelegate` 代理
 - 当扫描到内容时回会触发下面的代理方法
@@ -51,7 +53,7 @@ pod install
 - (void)closureScanning NS_REQUIRES_SUPER;
 ```
 
-###自定义扫描 UI
+### 自定义扫描 UI
 - 如果需要自定义扫描UI，扫描动画可以继承于 `BMScanDefaultCotroller `可轻松实现常见功能，也可以完全继于`BMScanDelegate `自行实现
 - 创建扫描控制器继承于 `BMScanDefaultCotroller `
 - 配置 `BMScanDelegate` 和  `BMScanDefaultDataSource` 代理
