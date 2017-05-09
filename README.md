@@ -197,9 +197,9 @@ pod install
 - (CGRect)rectOfInterestInScanController:(BMScanController *)scanController;
 ```
 ### 方法预览
-- [BMScanDelegate](https://github.com/asiosldh/BMScan/blob/master/BMScanDemo/BMScan/Cotroller/BMScanDelegate.h)
-- [BMScanDataSource](https://github.com/asiosldh/BMScan/blob/master/BMScanDemo/BMScan/Cotroller/BMScanDataSource.h)
-- [BMScanDefaultDataSource](https://github.com/asiosldh/BMScan/blob/master/BMScanDemo/BMScan/Cotroller/BMScanDefaultDataSource.h)
+- [BMScanDelegate](https://github.com/asiosldh/BMScan/blob/master/BMScanDemo/BMScan/Cotroller/BMScanDelegate.h),  [cocoapods文档](http://cocoadocs.org/docsets/BMScan/0.0.1/Protocols/BMScanDelegate.html)
+- [BMScanDataSource](https://github.com/asiosldh/BMScan/blob/master/BMScanDemo/BMScan/Cotroller/BMScanDataSource.h),  [cocoapods文档](http://cocoadocs.org/docsets/BMScan/0.0.1/Protocols/BMScanDataSource.html)
+- [BMScanDefaultDataSource](https://github.com/asiosldh/BMScan/blob/master/BMScanDemo/BMScan/Cotroller/BMScanDefaultDataSource.h),  [cocoapods文档](http://cocoadocs.org/docsets/BMScan/0.0.1/Protocols/BMScanDefaultDataSource.html)
 
 ## Contacts
 ##### Sina : [@梁大红](http://weibo.com/3205872327)
