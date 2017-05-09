@@ -185,6 +185,7 @@ pod install
 ```
 
 ####可识别区域
+
 >可以继于`BMScanDefaultCotroller`不需要考虑，内部会有扫描区域来确定`可识别区域`,如果有特殊要求可实现`BMScanDataSource`协议的如下方法即可
 
 ```c
